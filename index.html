@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+    fetch('https://api.ipify.org?format=json')
+    .then(results=> results.json())
+    .then(data=> window.location.href = "https://scamalytics.com/ip/" + data.ip);
+</script>
+
+</body>
+</html>
